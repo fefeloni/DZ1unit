@@ -25,13 +25,13 @@ public class CashbackHackerServiceTest {
         assertEquals(actual, expected);
     }
 
-    //@Test
-    //void shouldCashbackHacker() {
-        //CashbackHackerService cashbackHackerService = new CashbackHackerService();
-        //int amount = 1000;
-        //int expected = 0; тест падает в этом месте
-        //int actual = cashbackHackerService.remain(amount);
+    @Test
+    void shouldCashbackHacker() {
+        CashbackHackerService cashbackHackerService = new CashbackHackerService();
+        int amount = 1000;
+        int expected = 0;
+        int actual = cashbackHackerService.remain(amount);
 
-        //assertEquals(actual, expected);
-   // }
+        assertEquals(actual, expected);
+   }
 }
